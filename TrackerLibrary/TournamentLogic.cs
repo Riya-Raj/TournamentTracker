@@ -81,7 +81,7 @@ namespace TrackerLibrary
             int output = 0;
             int totalTeams = 1;
 
-            for (int i = 1; i < rounds; i++)
+            for (int i = 1; i <= rounds; i++)
             {
                 totalTeams *= 2;
             }
@@ -96,10 +96,10 @@ namespace TrackerLibrary
             int output = 1;
             int val = 2;
 
-            while (teamCount > val)
+            while (val < teamCount)
             {
                 val *= 2;
-                output++;
+                output += 1;
             }
 
             return output;
